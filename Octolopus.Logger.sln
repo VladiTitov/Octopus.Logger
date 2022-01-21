@@ -3,9 +3,35 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{4967B31B-821A-4304-B120-13433C2EC976}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{35A5B3D5-013F-456A-B9D1-A7330CE10626}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{D085CBA6-2C53-4D6F-ADC6-C9D974CCCEEA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApi", "WebApi", "{5A32A73F-558F-437C-8AA2-2B019DFF23DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Octopus.Logger.Api", "Octopus.Logger.Api\Octopus.Logger.Api.csproj", "{40870C80-2177-4234-A683-9420D4B08210}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40870C80-2177-4234-A683-9420D4B08210}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40870C80-2177-4234-A683-9420D4B08210}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40870C80-2177-4234-A683-9420D4B08210}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40870C80-2177-4234-A683-9420D4B08210}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{35A5B3D5-013F-456A-B9D1-A7330CE10626} = {4967B31B-821A-4304-B120-13433C2EC976}
+		{D085CBA6-2C53-4D6F-ADC6-C9D974CCCEEA} = {4967B31B-821A-4304-B120-13433C2EC976}
+		{5A32A73F-558F-437C-8AA2-2B019DFF23DB} = {4967B31B-821A-4304-B120-13433C2EC976}
+		{40870C80-2177-4234-A683-9420D4B08210} = {5A32A73F-558F-437C-8AA2-2B019DFF23DB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E3C1C0BF-0E16-4A58-B415-2CAD245B5D39}
